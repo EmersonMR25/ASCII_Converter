@@ -2,6 +2,13 @@ import cv2 as cv
 import sys
 import os
 
+#To DO
+#Load the image -> DONE
+#Transform the image to grayscale, since it is easier to work with a 2D array -> DONE
+#Create a threshold to determine the ACII characters to use depending on the value 0-2552  
+#Make sure to save the update file as an image in PNG format
+#Save the output file in the 'Output' folder if 's' key is pressed
+
 # Load the image
 img = cv.imread(cv.samples.findFile("src/Im_Input/Ronaldo_2024.webp"))
 
@@ -9,10 +16,15 @@ img = cv.imread(cv.samples.findFile("src/Im_Input/Ronaldo_2024.webp"))
 if img is None:
     sys.exit("Could not read the image.")
 
+# Convert the image to grayscale
+gray_image = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
+# print the pixel values for the image
+for pixel in gray_image:
+    print(pixel)
 
 # Display the image in a window
-cv.imshow("Display window", img)
+cv.imshow("Gray Image", gray_image)
 
 k = cv.waitKey(0)
 
