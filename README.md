@@ -38,9 +38,7 @@ Ensure you have all required libraries installed.
 Run the script using Python:
 
 ```bash
-Copy code
 python movement_capture.py
-Interact with the script:
 ```
 
 Press 'q' to exit the video stream.
@@ -60,9 +58,7 @@ Modify the script to point to your image file.
 Run the script using Python:
 
 ```bash
-Copy code
 python ascii_editor.py
-Interact with the script:
 ```
 
 Press 's' to save the ASCII representation as a text file in the specified output directory.
