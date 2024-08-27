@@ -1,5 +1,3 @@
-# Image to ACII converter
-
 # Image Processing with OpenCV library
 
 ## Description
